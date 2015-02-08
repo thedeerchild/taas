@@ -1,21 +1,28 @@
 <template name="login">
-    <h1 class="center">Login</h1>
-    <h3 class="center">or</h3>
-    <h1 class="center">Signup</h1>
-    <form class="logMeIn" action="{{pathFor 'profile'}}">
-        <div class="row">
-            <div class="input-field">
-                <input name="email" id="email" type="email" required />
-                <label for="email">Email</label>
-            </div>
+    <div class="row">
+        <div class="col s12">
+            <h1 class="center">Login or Signup</h1>
         </div>
-        <div class="row">
-            <div class="input-field">
-                <input name="password" id="password" type="password" required />
-                <label for="password">Password</label>
-            </div>
-        </div>
+    </div>
+    <div class="row">
+        <div class="col s12 m8 offset-m2">
+            
+            <form class="logMeIn" action="{{pathFor 'profile'}}">
+                <div class="row">
+                    <div class="input-field">
+                        <input name="email" id="email" type="email" required />
+                        <label for="email">Email</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field">
+                        <input name="password" id="password" type="password" required />
+                        <label for="password">Password</label>
+                    </div>
+                </div>
 
-        <button type="submit" class="btn waves-effect waves-light blue">Boom.</button>
-    </form>
+                <a href="/links" class="btn waves-effect waves-light blue">Boom.</a>
+            </form>
+        </div>
+    </div>
 </template>

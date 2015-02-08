@@ -1,5 +1,13 @@
 <template name="footer">
-    <a class="btn-floating btn-large waves-effect waves-light red" id="profileButton" href="{{pathFor "profile"}}"><i class="mdi-action-account-circle"></i></a>
-    <a class="btn-floating btn-large waves-effect waves-light red" id="messagesButton" href="{{pathFor "messages"}}"><i class="mdi-action-speaker-notes"></i></a>
-    <a class="btn-floating btn-large waves-effect waves-light red" id="linksButton" href="{{pathFor "links"}}"><i class="mdi-action-thumbs-up-down"></i></a>
+  <nav>
+    <div class="nav-wrapper">
+      <div class="col s12">
+        <ul class="" style="width:100%;">
+          <li style="width:33%;"><a href="{{pathFor "links"}}"><i class="mdi-action-thumbs-up-down left"></i>Discover</a></li>
+          <li style="width:33%;"><a href="{{pathFor "messages"}}"><i class="mdi-action-speaker-notes left"></i>Matches</a></li>
+          <li style="width:33%;"><a href="{{pathFor "profile"}}"><i class="mdi-action-account-circle left"></i>Profile</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 </template>
